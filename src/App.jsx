@@ -1,5 +1,13 @@
+import NavBar from './components/navBar/NavBar';
+import PrincipalBody from './components/principalBody/PrincipalBody';
+
 const App = () => {
-	return <h1>Núcleo de la aplicación</h1>;
+	return (
+		<>
+			<NavBar />
+			<PrincipalBody />
+		</>
+	);
 };
 
 export default App;
