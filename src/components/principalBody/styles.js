@@ -57,6 +57,20 @@ const StyledArticleInfo = styled.article`
 const StyledArticleInfoImg = styled.img`
 	width: 50px;
 `;
+const StyledTitle = styled.p`
+	font-family: 'Mukta', sans-serif;
+	margin-top: 320px;
+	color: #9e9b00;
+	font-weight: bold;
+	font-size: 50px;
+	text-align: center;
+	display: block;
+	margin-inline: auto;
+	width: 300px;
+`;
+const StyledProjectsSection = styled.section`
+	color: white;
+`;
 
 export {
 	StyledPrincipalSection,
@@ -68,5 +82,7 @@ export {
 	StyledArticleItems,
 	StyledItem,
 	StyledArticleInfo,
-	StyledArticleInfoImg
+	StyledArticleInfoImg,
+	StyledProjectsSection,
+	StyledTitle
 };
