@@ -8,7 +8,9 @@ const NavBar = () => {
 				<StyledImg src='public/LogoMarcMunuera.png' alt='' />
 				<StyledUl>
 					{NAVITEMS.map(item => (
-						<StyledLi key={item.id}>{item.itemName}</StyledLi>
+						<StyledLi key={item.id}>
+							<a href={item.itemId}>{item.itemName}</a>
+						</StyledLi>
 					))}
 				</StyledUl>
 			</StyledNav>

@@ -1,3 +1,4 @@
+import { PROJECTS } from '../../constants/projects';
 import {
 	StyledArticleInfo,
 	StyledArticleInfoImg,
@@ -9,6 +10,12 @@ import {
 	StyledDescriptionSmall,
 	StyledItem,
 	StyledPrincipalSection,
+	StyledProjectCard,
+	StyledProjectCardContainerButton,
+	StyledProjectCardDescription,
+	StyledProjectCardImg,
+	StyledProjectCardLink,
+	StyledProjectCardTitle,
 	StyledProjectsSection,
 	StyledTitle
 } from './styles';
@@ -52,22 +59,28 @@ const PrincipalBody = () => {
 					<StyledArticleInfoImg src='public/github-aec80ceb.svg' alt='' />
 				</StyledArticleInfo>
 			</StyledPrincipalSection>
+			<br id='projects' />
 			<StyledTitle>[ PROJECTS ]</StyledTitle>
 			<StyledProjectsSection>
-				<img src='' alt='' />
-				<div>
-					<p>CARTA DE VINOS</p>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Repellendus, consequatur ullam minus sapiente excepturi velit sint
-						debitis iste molestias exercitationem quam, modi eum ipsa quisquam
-						architecto voluptates libero totam perferendis.
-					</p>
-					<div>
-						<button>Project Link</button>
-						<button>Github</button>
-					</div>
-				</div>
+				{PROJECTS.map(project => (
+					<StyledProjectCard key={project.id}>
+						<StyledProjectCardImg src={project.projectImg} alt='' />
+						<div>
+							<StyledProjectCardTitle>
+								{project.projectName}
+							</StyledProjectCardTitle>
+							<StyledProjectCardDescription>
+								{project.decription}
+							</StyledProjectCardDescription>
+							<StyledProjectCardContainerButton>
+								<StyledProjectCardLink href={project.linkGitHub}>
+									<img src='public/github-aec80ceb.svg' alt='' />
+									Github
+								</StyledProjectCardLink>
+							</StyledProjectCardContainerButton>
+						</div>
+					</StyledProjectCard>
+				))}
 			</StyledProjectsSection>
 		</>
 	);
