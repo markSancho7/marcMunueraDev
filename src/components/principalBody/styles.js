@@ -70,6 +70,12 @@ const StyledTitle = styled.p`
 `;
 const StyledProjectsSection = styled.section`
 	color: white;
+	width: 1000px;
+	height: 500px;
+	background-color: green;
+	margin-inline: auto;
+	margin-top: 50px;
+	display: flex;
 `;
 
 export {
