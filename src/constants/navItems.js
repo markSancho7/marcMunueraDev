@@ -8,14 +8,17 @@ export const NAVITEMS = [
 	},
 	{
 		id: v4(),
-		itemName: 'About me'
+		itemName: 'About me',
+		itemId: '#aboutMe'
 	},
 	{
 		id: v4(),
-		itemName: 'Stack'
+		itemName: 'Stack',
+		itemId: '#stack'
 	},
 	{
 		id: v4(),
-		itemName: 'Contact'
+		itemName: 'Contact',
+		itemId: '#contact'
 	}
 ];

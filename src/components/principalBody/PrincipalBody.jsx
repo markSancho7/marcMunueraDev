@@ -1,4 +1,3 @@
-import { PROJECTS } from '../../constants/projects';
 import {
 	StyledArticleInfo,
 	StyledArticleInfoImg,
@@ -9,15 +8,7 @@ import {
 	StyledDescriptionMedium,
 	StyledDescriptionSmall,
 	StyledItem,
-	StyledPrincipalSection,
-	StyledProjectCard,
-	StyledProjectCardContainerButton,
-	StyledProjectCardDescription,
-	StyledProjectCardImg,
-	StyledProjectCardLink,
-	StyledProjectCardTitle,
-	StyledProjectsSection,
-	StyledTitle
+	StyledPrincipalSection
 } from './styles';
 
 const PrincipalBody = () => {
@@ -59,29 +50,6 @@ const PrincipalBody = () => {
 					<StyledArticleInfoImg src='public/github-aec80ceb.svg' alt='' />
 				</StyledArticleInfo>
 			</StyledPrincipalSection>
-			<br id='projects' />
-			<StyledTitle>[ PROJECTS ]</StyledTitle>
-			<StyledProjectsSection>
-				{PROJECTS.map(project => (
-					<StyledProjectCard key={project.id}>
-						<StyledProjectCardImg src={project.projectImg} alt='' />
-						<div>
-							<StyledProjectCardTitle>
-								{project.projectName}
-							</StyledProjectCardTitle>
-							<StyledProjectCardDescription>
-								{project.decription}
-							</StyledProjectCardDescription>
-							<StyledProjectCardContainerButton>
-								<StyledProjectCardLink href={project.linkGitHub}>
-									<img src='public/github-aec80ceb.svg' alt='' />
-									Github
-								</StyledProjectCardLink>
-							</StyledProjectCardContainerButton>
-						</div>
-					</StyledProjectCard>
-				))}
-			</StyledProjectsSection>
 		</>
 	);
 };

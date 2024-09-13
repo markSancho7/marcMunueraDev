@@ -25,9 +25,13 @@ const StyledLi = styled.li`
 	text-decoration: none;
 	color: #d2d80d;
 `;
+const StyledNavA = styled.a`
+	text-decoration: none;
+	color: #d2d80d;
+`;
 
 const StyledImg = styled.img`
 	width: 250px;
 `;
 
-export { StyledImg, StyledNav, StyledUl, StyledLi };
+export { StyledImg, StyledNav, StyledUl, StyledLi, StyledNavA };

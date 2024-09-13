@@ -1,5 +1,5 @@
 import { NAVITEMS } from '../../constants/navItems';
-import { StyledImg, StyledLi, StyledNav, StyledUl } from './style';
+import { StyledImg, StyledLi, StyledNav, StyledNavA, StyledUl } from './style';
 
 const NavBar = () => {
 	return (
@@ -9,7 +9,7 @@ const NavBar = () => {
 				<StyledUl>
 					{NAVITEMS.map(item => (
 						<StyledLi key={item.id}>
-							<a href={item.itemId}>{item.itemName}</a>
+							<StyledNavA href={item.itemId}>{item.itemName}</StyledNavA>
 						</StyledLi>
 					))}
 				</StyledUl>

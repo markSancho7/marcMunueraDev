@@ -8,7 +8,13 @@ export const PROJECTS = [
 		decription:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, odio accusantium fugiat illum quasi amet animi voluptatem voluptatibus quo incidunt qui et modi debitis porro quisquam voluptates voluptas neque quia?',
 		linkGitHub: 'https://github.com/markSancho7/wine-aplication',
-		linkProject: ''
+		tecnologies: [
+			'Node.js',
+			'React',
+			'MongoDB',
+			'Styled-Components',
+			'React-Router'
+		]
 	},
 	{
 		id: v4(),
@@ -17,6 +23,6 @@ export const PROJECTS = [
 		decription:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, odio accusantium fugiat illum quasi amet animi voluptatem voluptatibus quo incidunt qui et modi debitis porro quisquam voluptates voluptas neque quia?',
 		linkGitHub: 'https://github.com/markSancho7/TFM-3-en-raya',
-		linkProject: ''
+		tecnologies: ['JavaScript', 'HTML', 'CSS']
 	}
 ];
