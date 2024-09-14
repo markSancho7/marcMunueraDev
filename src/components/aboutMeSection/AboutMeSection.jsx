@@ -9,7 +9,7 @@ import {
 const AboutMeSection = () => {
 	return (
 		<>
-			<StyledTitle id='aboutMe'>[ABOUT ME]</StyledTitle>
+			<StyledTitle id='aboutMe'>[ ABOUT ME ]</StyledTitle>
 			<StyledSection>
 				<StyledImg src='public/projectmanagement.jpg' alt='' />
 				<StyledP>

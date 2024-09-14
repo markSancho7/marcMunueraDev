@@ -9,7 +9,7 @@ const StyledTitle = styled.p`
 	text-align: center;
 	display: block;
 	margin-inline: auto;
-	width: 300px;
+	width: 400px;
 	padding-top: 0px;
 `;
 const StyledContainerLogos = styled.div`

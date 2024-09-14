@@ -4,7 +4,7 @@ import { StyledContainerLogos, StyledLogo, StyledTitle } from './styles';
 const StacksSection = () => {
 	return (
 		<>
-			<StyledTitle id='stack'>[TECNOLOGIES]</StyledTitle>
+			<StyledTitle id='stack'>[ TECNOLOGIES ]</StyledTitle>
 			<StyledContainerLogos>
 				{TECNOLOGIES.map(tecnologie => (
 					<StyledLogo
