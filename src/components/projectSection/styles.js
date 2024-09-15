@@ -29,6 +29,8 @@ const StyledProjectCard = styled.article`
 const StyledProjectCardImg = styled.img`
 	width: 600px;
 	height: 350px;
+	margin-top: 25px;
+	opacity: 0.9;
 `;
 const StyledProjectCardTitle = styled.p`
 	font-family: 'Mukta', sans-serif;

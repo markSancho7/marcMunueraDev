@@ -4,7 +4,7 @@ export const PROJECTS = [
 	{
 		id: v4(),
 		projectName: 'WINE CARD',
-		projectImg: 'public/projectmanagement.jpg',
+		projectImg: 'public/vinosImg.png',
 		decription:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, odio accusantium fugiat illum quasi amet animi voluptatem voluptatibus quo incidunt qui et modi debitis porro quisquam voluptates voluptas neque quia?',
 		linkGitHub: 'https://github.com/markSancho7/wine-aplication',
