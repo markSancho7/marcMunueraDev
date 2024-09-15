@@ -11,7 +11,7 @@ const AboutMeSection = () => {
 		<>
 			<StyledTitle id='aboutMe'>[ ABOUT ME ]</StyledTitle>
 			<StyledSection>
-				<StyledImg src='public/projectmanagement.jpg' alt='' />
+				<StyledImg src='public/marcosDev.png' alt='' />
 				<StyledP>
 					Im a{' '}
 					<StyledChangeColor>

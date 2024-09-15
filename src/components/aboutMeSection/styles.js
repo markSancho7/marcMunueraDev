@@ -22,7 +22,8 @@ const StyledSection = styled.section`
 `;
 const StyledImg = styled.img`
 	width: 600px;
-	height: 400px;
+	height: 550px;
+	border-radius: 20px;
 `;
 const StyledP = styled.p`
 	width: 500px;
