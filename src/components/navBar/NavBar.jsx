@@ -1,12 +1,29 @@
+import { useState } from 'react';
 import { NAVITEMS } from '../../constants/navItems';
-import { StyledImg, StyledLi, StyledNav, StyledNavA, StyledUl } from './style';
+import {
+	StyledImg,
+	StyledimgHambur,
+	StyledLi,
+	StyledNav,
+	StyledNavA,
+	StyledUl
+} from './style';
 
 const NavBar = () => {
+	const [visibleMenu, setVisibleMenu] = useState(true);
+	console.log(visibleMenu);
+
 	return (
 		<>
 			<StyledNav>
 				<StyledImg src='public/LogoMarcMunuera.png' alt='' />
-				<StyledUl>
+				<StyledimgHambur
+					src='public/menuHamb.png'
+					onClick={() => hideMenu(visibleMenu, setVisibleMenu)}
+				></StyledimgHambur>
+				<StyledUl $visibleMenu={visibleMenu}>
+					<img src='' alt='' />
+
 					{NAVITEMS.map(item => (
 						<StyledLi key={item.id}>
 							<StyledNavA href={item.itemId}>{item.itemName}</StyledNavA>
@@ -18,3 +35,7 @@ const NavBar = () => {
 	);
 };
 export default NavBar;
+
+const hideMenu = (visibleMenu, setVisibleMenu) => {
+	setVisibleMenu(!visibleMenu);
+};
