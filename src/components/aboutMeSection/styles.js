@@ -18,7 +18,6 @@ const StyledSection = styled.section`
 	width: 1200px;
 	height: 680px;
 	margin-inline: auto;
-	padding: 50px;
 `;
 const StyledImg = styled.img`
 	width: 600px;

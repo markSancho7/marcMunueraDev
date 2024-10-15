@@ -18,11 +18,6 @@ const StyledimgHambur = styled.img`
 	top: 10px;
 	filter: invert(1);
 	display: none;
-	@media (max-width: 768px) {
-		display: block;
-		position: sticky;
-		right: 0;
-	}
 `;
 const StyledUl = styled.ul`
 	display: flex;
@@ -30,12 +25,6 @@ const StyledUl = styled.ul`
 	list-style: none;
 	justify-content: center;
 	align-items: center;
-
-	@media (max-width: 768px) {
-		flex-direction: column;
-		font-size: 20px;
-		display: ${({ $visibleMenu }) => ($visibleMenu ? 'none' : 'block')};
-	}
 `;
 
 const StyledLi = styled.li`
