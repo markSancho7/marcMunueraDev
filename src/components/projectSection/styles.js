@@ -9,10 +9,13 @@ const StyledTitle = styled.p`
 	text-align: center;
 	display: block;
 	margin-inline: auto;
-	width: 300px;
+	width: 1200px;
 	padding-top: 100px;
 `;
 const StyledProjectsSection = styled.section`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	color: white;
 	width: 1200px;
 	height: 1200px;
@@ -22,12 +25,21 @@ const StyledProjectsSection = styled.section`
 const StyledProjectCard = styled.article`
 	display: flex;
 	width: 1200px;
-	height: 500px;
+	height: 900px;
 	padding: 50px;
 	gap: 20px;
+	@media (max-width: 1200px) {
+		flex-direction: column;
+		align-items: center;
+		width: 850px;
+		margin-left: auto;
+		margin-right: auto;
+		height: 800px;
+		padding-top: 0;
+	}
 `;
 const StyledProjectCardImg = styled.img`
-	width: 600px;
+	width: 500px;
 	height: 350px;
 	margin-top: 25px;
 	opacity: 0.9;

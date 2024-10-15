@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const StyledTitle = styled.p`
 	font-family: 'Mukta', sans-serif;
-	margin-top: 80px;
+	margin-top: 20px;
 	color: #9e9b00;
 	font-weight: bold;
 	font-size: 50px;
@@ -10,7 +10,7 @@ const StyledTitle = styled.p`
 	display: block;
 	margin-inline: auto;
 	width: 400px;
-	padding-top: 0px;
+	padding-top: 50px;
 `;
 const StyledContainerLogos = styled.div`
 	width: 1200px;

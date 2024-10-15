@@ -11,6 +11,8 @@ const StyledNav = styled.nav`
 	font-size: 25px;
 	background-color: black;
 	opacity: 0.7;
+	width: 1200px;
+	margin-inline: auto;
 `;
 const StyledimgHambur = styled.img`
 	width: 50px;
