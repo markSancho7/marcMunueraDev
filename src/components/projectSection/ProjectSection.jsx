@@ -1,5 +1,7 @@
 import { PROJECTS } from '../../constants/projects';
 import {
+	StyledContainerDescriptioStacks,
+	StyledContainerTitleImg,
 	StyledProjectCard,
 	StyledProjectCardContainerButton,
 	StyledProjectCardContainerTecnologies,
@@ -19,11 +21,13 @@ const ProjectSection = () => {
 			<StyledProjectsSection>
 				{PROJECTS.map(project => (
 					<StyledProjectCard key={project.id}>
-						<StyledProjectCardImg src={project.projectImg} alt='' />
-						<div>
+						<StyledContainerTitleImg>
 							<StyledProjectCardTitle>
 								{project.projectName}
 							</StyledProjectCardTitle>
+							<StyledProjectCardImg src={project.projectImg} alt='' />
+						</StyledContainerTitleImg>
+						<StyledContainerDescriptioStacks>
 							<StyledProjectCardDescription>
 								{project.decription}
 							</StyledProjectCardDescription>
@@ -31,6 +35,10 @@ const ProjectSection = () => {
 								<StyledProjectCardLink href={project.linkGitHub}>
 									<img src='public/github-aec80ceb.svg' alt='' />
 									Github
+								</StyledProjectCardLink>
+								<StyledProjectCardLink href={project.linkWeb}>
+									<img src='public/link-image-c2992ee1.svg' alt='' />
+									Link
 								</StyledProjectCardLink>
 							</StyledProjectCardContainerButton>
 							<StyledProjectCardContainerTecnologies>
@@ -40,7 +48,7 @@ const ProjectSection = () => {
 									</StyledProjectCardTecnology>
 								))}
 							</StyledProjectCardContainerTecnologies>
-						</div>
+						</StyledContainerDescriptioStacks>
 					</StyledProjectCard>
 				))}
 			</StyledProjectsSection>

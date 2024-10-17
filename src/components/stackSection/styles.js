@@ -11,6 +11,9 @@ const StyledTitle = styled.p`
 	margin-inline: auto;
 	width: 400px;
 	padding-top: 50px;
+	@media (max-width: 1200px) {
+		margin-top: 450px;
+	}
 `;
 const StyledContainerLogos = styled.div`
 	width: 1200px;

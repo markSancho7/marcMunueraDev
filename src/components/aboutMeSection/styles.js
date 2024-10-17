@@ -11,10 +11,14 @@ const StyledTitle = styled.p`
 	margin-inline: auto;
 	width: 300px;
 	padding-top: 100px;
+	@media (max-width: 1200px) {
+		margin-top: 500px;
+	}
 `;
 
 const StyledSection = styled.section`
 	display: flex;
+	justify-content: space-between;
 	width: 1200px;
 	height: 680px;
 	margin-inline: auto;

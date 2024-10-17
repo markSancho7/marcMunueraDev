@@ -21,28 +21,48 @@ const StyledProjectsSection = styled.section`
 	height: 1200px;
 	margin-inline: auto;
 	margin-top: 50px;
+	@media (max-width: 1200px) {
+		gap: 50px;
+	}
+`;
+const StyledContainerTitleImg = styled.div`
+	width: 600px;
+	@media (max-width: 1200px) {
+		width: 750px;
+	}
+`;
+const StyledContainerDescriptioStacks = styled.div`
+	width: 600px;
+	padding-top: 100px;
+	@media (max-width: 1200px) {
+		padding: 0;
+		width: 750px;
+	}
 `;
 const StyledProjectCard = styled.article`
 	display: flex;
 	width: 1200px;
 	height: 900px;
-	padding: 50px;
 	gap: 20px;
 	@media (max-width: 1200px) {
 		flex-direction: column;
 		align-items: center;
-		width: 850px;
+		width: 750px;
 		margin-left: auto;
 		margin-right: auto;
-		height: 800px;
+		height: 900px;
 		padding-top: 0;
 	}
 `;
 const StyledProjectCardImg = styled.img`
-	width: 500px;
+	width: 600px;
 	height: 350px;
 	margin-top: 25px;
 	opacity: 0.9;
+	@media (max-width: 1200px) {
+		width: 750px;
+		height: 400px;
+	}
 `;
 const StyledProjectCardTitle = styled.p`
 	font-family: 'Mukta', sans-serif;
@@ -54,6 +74,7 @@ const StyledProjectCardDescription = styled.p`
 	font-family: 'Mukta', sans-serif;
 	color: white;
 	font-size: 20px;
+	width: 600px;
 `;
 const StyledProjectCardContainerButton = styled.div`
 	display: flex;
@@ -103,5 +124,7 @@ export {
 	StyledProjectCardLink,
 	StyledProjectCardContainerButton,
 	StyledProjectCardContainerTecnologies,
-	StyledProjectCardTecnology
+	StyledProjectCardTecnology,
+	StyledContainerTitleImg,
+	StyledContainerDescriptioStacks
 };
